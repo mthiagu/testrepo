@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('verify version') {
       steps {
-        sh 'perl --version'
+        bat "C:\\thiagu\\sw\\perl-5.32\\perl\\bin\\perl --version"
         }
        }
        stage('hello') {
         steps {
-         sh ' perl test.pl'
+         bat "C:\\thiagu\\sw\\perl-5.32\\perl\\bin\\perl test.pl"
          }
        }
    }
