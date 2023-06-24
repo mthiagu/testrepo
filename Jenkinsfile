@@ -9,8 +9,15 @@ pipeline {
        stage('hello') {
         steps {
          bat "C:\\thiagu\\sw\\perl-5.32\\perl\\bin\\perl test.pl"
+         AuditTools() 
          }
        }
    }
 }
         
+void AuditTools(){
+  bat "git --version"
+  bat "perl --version"
+  bat "hostname"
+  bat "date /t"
+}
