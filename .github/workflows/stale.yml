@@ -10,5 +10,5 @@ on:
 jobs:
   call:
     # See https://github.com/marketplace/actions/close-stale-issues
-    uses: https://github.com/marketplace/actions/close-stale-issues?version=v9.1.0
+    uses: actions/stale@v9.1.0
     secrets: inherit
