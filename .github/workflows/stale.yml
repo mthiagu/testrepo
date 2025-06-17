@@ -6,7 +6,7 @@ name: Innersource Stale issues and pull requests
 on:
   workflow_dispatch:
   schedule:
-    - cron: 41 23 * * *   # run daily
+    - cron: * * * * *   # run daily
 jobs:
   call:
     # See https://github.com/marketplace/actions/close-stale-issues
