@@ -15,15 +15,8 @@ jobs:
       # Call the stale action to close stale issues and PRs
       - name: Close Stale Issues and PRs
         uses: actions/stale@v9.1.0
-      - name: Set color
-        id: color-selector
-        run: echo "SELECTED_COLOR=green" >> "$GITHUB_OUTPUT"
-      - name: Get color
-        env:
-          SELECTED_COLOR: ${{ steps.color-selector.outputs.SELECTED_COLOR }}
-        run: echo "The selected color is $SELECTED_COLOR"
       - name: Review
-        run: echo "### Review :memo:" >> $GITHUB_STEP_SUMMARY
+        run: echo "### Review :rocket:" >> $GITHUB_STEP_SUMMARY
 
 
 
